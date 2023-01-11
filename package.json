@@ -27,6 +27,8 @@
   "dependencies": {
     "animate.css": "^3.7.2",
     "font-awesome": "^4.7.0",
+    "gulp-uglify-es": "^3.0.0",
+    "uglify-js": "github:mishoo/UglifyJS2#harmony",
     "waypoints": "^4.0.1"
   }
 }

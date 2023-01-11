@@ -11,6 +11,16 @@
 	display: inline-block;
 	text-transform: uppercase;
 }
+
+.btnBig {
+	font-size: 30px;
+	border: solid 2px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	display: inline-block;
+	text-transform: uppercase;
+}
 .btn:hover, .btn:focus {
 	color: $white-color;
 	border-color: $accent-color;

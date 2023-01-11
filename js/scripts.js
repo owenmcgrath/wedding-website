@@ -184,23 +184,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Megan & Owen's Wedding",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Aug 12, 2023 14:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Aug 12, 2023 23:59'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: '825 N Carpenter St, Chicago, IL 60642',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
+            description: "We are so happy that you will be attending, and we look forward to seeing you! Any questions please contact: Person McPerson +18001234567"
         }
     });
 
@@ -230,7 +230,7 @@ $(document).ready(function () {
                 })
                 .fail(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. Please contact Owen, +1-774-269-8934, owenmcgrath85@gmail.com '));
                 });
         }
     });
@@ -241,31 +241,86 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var church = {lat: 41.89680966316852, lng: -87.6533969021769};
+    var center = {lat: 41.88556487032997, lng: -87.64030718399374}
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: location,
+        zoom: 13,
+        center: center,
         scrollwheel: false
     });
 
+    var churchStr =
+        "</div>" +
+        '<h3 id="firstHeading" class="firstHeading">St. John Cantius</h3>' +
+        '<p>Nuptial Mass</p>'
+        "</div>";
+
+    var churchInfoWindow = new google.maps.InfoWindow({
+        content: churchStr,
+        ariaLabel: "St. John Cantius",
+      });
+
     var marker = new google.maps.Marker({
-        position: location,
-        map: map
+        position: church,
+        map: map,
+        title: "St. John Cantius (Nuptial Mass)",
+    });
+
+    marker.addListener("click", () => {
+        churchInfoWindow.open({
+            anchor: marker,
+            map,
+        });
+    });
+
+    var reception = { lat: 41.877880999863144, lng: -87.62993139423149 };
+    var marker2 = new google.maps.Marker(
+        {
+            position: reception,
+            map: map,
+            title: "Union League Club (Reception)"
+        }
+    );
+
+    var rcpnStr =
+        "</div>" +
+        '<h3 id="firstHeading" class="firstHeading">Union League Club</h3>' +
+        '<p>Reception</p>'
+    "</div>";
+
+    var rcpnInfoWindow = new google.maps.InfoWindow({
+        content: rcpnStr,
+        ariaLabel: "Union League Club",
+      });
+
+    marker2.addListener("click", () => {
+        rcpnInfoWindow.open({
+            anchor: marker2,
+            map,
+        });
     });
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var church = {lat: 41.89680966316852, lng: -87.6533969021769};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
-        center: la_fiesta,
+        center: church,
         scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
-        position: la_fiesta,
+        position: church,
         map: map
     });
+
+    var reception = { lat: 41.877880999863144, lng: -87.62993139423149 };
+    var marker2 = new google.maps.Marker(
+        {
+            position: reception,
+            map: map
+        }
+    );
 }
 
 // alert_markup
