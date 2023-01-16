@@ -45,8 +45,14 @@ $(document).ready(function () {
     $('.wp9').waypoint(function () {
         $('.wp9').addClass('animated fadeInRight');
     }, {
-        offset: '75%'
+        offset: '75%'  
     });
+    $('.wp10').waypoint(function () {
+        $('.wp10').addClass('animated fadeInRight');
+    }, {
+        offset: '75%'  
+    });
+    
 
     /***************** Initiate Flexslider ******************/
     $('.flexslider').flexslider({

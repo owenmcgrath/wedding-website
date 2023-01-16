@@ -814,7 +814,7 @@ RSVP form
       position: relative;
 
       i {
-        color: $accent-color;
+        color: #E1c699;
         font-size: 14px;
       }
       i:after {
@@ -907,9 +907,9 @@ body.modal-open {
 }
 
 .container-bg {
-  background: $accent-color-hover;
+  background: #5a86add5;
 }
 
 html body {
-  background-color: $accent-color;
+  background-color: $white-color;
 }
