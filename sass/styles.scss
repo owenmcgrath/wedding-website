@@ -789,6 +789,12 @@ Google map
   pointer-events: auto;
 }
 
+.imageCenterAlign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ==========================================================================
 RSVP form
 ========================================================================== */
@@ -859,6 +865,7 @@ RSVP form
   }
 }
 
+
 /* ==========================================================================
 Footer
 ========================================================================== */
@@ -896,6 +903,17 @@ footer {
   }
 }
 
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
 /* ==========================================================================
 Bootstrap override
 ========================================================================== */
@@ -908,6 +926,11 @@ body.modal-open {
 
 .container-bg {
   background: #5a86add5;
+}
+
+.text-overlay
+{
+  color:$white-color
 }
 
 html body {
