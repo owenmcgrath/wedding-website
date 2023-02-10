@@ -15,17 +15,17 @@ $(document).ready(function () {
     $('.wp3').waypoint(function () {
         $('.wp3').addClass('animated fadeInLeft');
     }, {
-        offset: '75%'
+        offset: '100%'
     });
     $('.wp4').waypoint(function () {
         $('.wp4').addClass('animated fadeInRight');
     }, {
-        offset: '75%'
+        offset: '100%'
     });
     $('.wp5').waypoint(function () {
         $('.wp5').addClass('animated fadeInLeft');
     }, {
-        offset: '75%'
+        offset: '100%'
     });
     $('.wp6').waypoint(function () {
         $('.wp6').addClass('animated fadeInRight');
@@ -50,22 +50,22 @@ $(document).ready(function () {
     $('.wp10').waypoint(function () {
         $('.wp10').addClass('animated fadeInRight');
     }, {
-        offset: '75%'  
+        offset: '100%'  
     });
     $('.wp11').waypoint(function () {
-        $('.wp11').addClass('animated fadeInRight');
+        $('.wp11').addClass('animated fadeInLeft');
     }, {
-        offset: '75%'  
+        offset: '100%'  
     });
     $('.wp12').waypoint(function () {
         $('.wp12').addClass('animated fadeInRight');
     }, {
-        offset: '75%'  
+        offset: '100%'  
     });
     $('.wp13').waypoint(function () {
-        $('.wp13').addClass('animated fadeInRight');
+        $('.wp13').addClass('animated fadeInLeft');
     }, {
-        offset: '75%'  
+        offset: '100%'  
     });
     $('.wp14').waypoint(function () {
         $('.wp14').addClass('animated fadeInRight');

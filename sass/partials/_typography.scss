@@ -1,11 +1,12 @@
 // Typography partial
 @import "partials/colors";
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Parisienne&display=swap');
 
 // Fonts
 
-$sans-serif: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-$serif: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-$accent-font: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+$sans-serif: "Gilda Display", "Gilda Display", "Gilda Display", "Gilda Display", "Gilda Display", sans-serif;
+$serif: "Gilda Display", "Gilda Display", "Gilda Display", "Gilda Display", "Gilda Display", serif;
+$accent-font: "Gilda Display", "Gilda Display", "Gilda Display", "Gilda Display", "Gilda Display", serif;
 
 // Weights
 
@@ -16,9 +17,9 @@ $bold: 700;
 
 // Sizes
 
-$font-size-h1: 80px;
+$font-size-h1: 40px;
 $font-size-h2: 50px;
-$font-size-h3: 40px;
+$font-size-h3: 20px;
 $font-size-h4: 30px;
 $font-size-h5: 15px;
 $font-size-p: 15px;
@@ -46,6 +47,7 @@ p {
 }
 
 h1 {
+  font-family: 'Parisienne', sans-serif;
   font-size: $font-size-h1;
 }
 
@@ -57,14 +59,14 @@ h2 {
 
 h3 {
   color: $h3-color;
-  font-size: $font-size-h4;
-  font-weight: $bold;
+  font-size: $font-size-h3;
   text-transform: uppercase;
   letter-spacing: 3px;
   line-height: $base-line-height;
 }
 
 h4 {
+  font-weight: $bold;
   font-size: $font-size-h4;
 }
 

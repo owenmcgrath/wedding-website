@@ -162,7 +162,7 @@ Animations
 /* ==========================================================================
 Waypoinsts
 ========================================================================== */
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 {
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 .wp10 .wp11 .wp12 .wp13 .wp14{
   visibility: hidden
 }
 .wp8, .wp9 {
@@ -912,6 +912,19 @@ footer {
 .vertical-align {
   display: flex;
   flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;     /* Align the flex-items vertically */
+  justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+
+.title-padding{
+  display:table-cell;
+  float:none;
 }
 
 /* ==========================================================================
