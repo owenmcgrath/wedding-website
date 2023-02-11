@@ -59,6 +59,10 @@ section .header {
 .section-padding {
   padding: $section-padding;
 }
+
+.photo-padding {
+  height: 150px;
+}
 .section-border {
   border-bottom: 1px solid $keyline-color;
 }
