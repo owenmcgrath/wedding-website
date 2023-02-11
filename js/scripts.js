@@ -3,7 +3,7 @@ $(document).ready(function () {
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {
-        $('.wp1').addClass('animated fadeInLeft');
+        $('.wp1').addClass('animated fadeIn');
     }, {
         offset: '75%'
     });
@@ -38,7 +38,7 @@ $(document).ready(function () {
         offset: '75%'
     });
     $('.wp8').waypoint(function () {
-        $('.wp8').addClass('animated fadeInRight');
+        $('.wp8').addClass('animated fadeInLeft');
     }, {
         offset: '75%'
     });
