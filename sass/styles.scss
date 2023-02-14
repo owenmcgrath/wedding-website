@@ -34,7 +34,7 @@ a {
 }
 a:hover, a:focus {
   color: $accent-color-hover;
-  text-decoration: none;
+  text-decoration: underline;
 }
 body {
   font-family: $sans-serif;
