@@ -267,29 +267,29 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var church = {lat: 41.89680966316852, lng: -87.6533969021769};
-    var center = {lat: 41.88556487032997, lng: -87.64030718399374}
+    var church = {lat: 41.99750021254316, lng: -70.9879442079629};
+    var center = {lat: 42.02974265514132, lng: -70.9767194473382}
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 13,
+        zoom: 12,
         center: center,
         scrollwheel: false
     });
 
     var churchStr =
         "</div>" +
-        '<h3 id="firstHeading" class="firstHeading">St. John Cantius</h3>' +
+        '<h3 id="firstHeading" class="firstHeading">St. Thomas Aquinas</h3>' +
         '<p>Nuptial Mass</p>'
         "</div>";
 
     var churchInfoWindow = new google.maps.InfoWindow({
         content: churchStr,
-        ariaLabel: "St. John Cantius",
+        ariaLabel: "St. Thomas Aquinas",
       });
 
     var marker = new google.maps.Marker({
         position: church,
         map: map,
-        title: "St. John Cantius (Nuptial Mass)",
+        title: "St. Thomas Aquinas",
     });
 
     marker.addListener("click", () => {
@@ -299,24 +299,24 @@ function initMap() {
         });
     });
 
-    var reception = { lat: 41.877880999863144, lng: -87.62993139423149 };
+    var reception = { lat: 42.056565443359254, lng: -70.95300000316283 };
     var marker2 = new google.maps.Marker(
         {
             position: reception,
             map: map,
-            title: "Union League Club (Reception)"
+            title: "Miraval Gardens (Reception)"
         }
     );
 
     var rcpnStr =
         "</div>" +
-        '<h3 id="firstHeading" class="firstHeading">Union League Club</h3>' +
+        '<h3 id="firstHeading" class="firstHeading">Miraval Gardens</h3>' +
         '<p>Reception</p>'
     "</div>";
 
     var rcpnInfoWindow = new google.maps.InfoWindow({
         content: rcpnStr,
-        ariaLabel: "Union League Club",
+        ariaLabel: "Miraval Gardens",
       });
 
     marker2.addListener("click", () => {
@@ -328,7 +328,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var church = {lat: 41.89680966316852, lng: -87.6533969021769};
+    var church = {lat: 41.99750021254316, lng: -70.9879442079629};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: church,
@@ -340,7 +340,7 @@ function initBBSRMap() {
         map: map
     });
 
-    var reception = { lat: 41.877880999863144, lng: -87.62993139423149 };
+    var reception = { lat: 42.056565443359254, lng: -70.95300000316283 };
     var marker2 = new google.maps.Marker(
         {
             position: reception,
