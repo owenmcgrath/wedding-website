@@ -255,8 +255,8 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 900px;
-  background: url('../img/proposal.jpg') center center;
+  min-height: 731px;
+  background: url('../img/j-z-header.png') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -297,7 +297,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: #5a86add5;
+  background-color: #000000d5;
   z-index: 999;
   width: 100%;
 }
